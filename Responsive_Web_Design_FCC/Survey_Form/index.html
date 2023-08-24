@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name <input type="text" id="name" name="name" placeholder="Enter your name" required /> 
+            </label>
+            <label for="email" id="email-label">
+                Email <input type="email" id="email" name="email" placeholder="Enter your Email" required /> 
+            </label>
+            <label for="number" id="number-label">
+                Age(optional) <input type="number" id="number" name="number" min="15" max="120" placeholder="Age"/>
+            </label>
+            <label for="dropdown" id="dropdown-label">What do you use our website for?
+                <select id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">To Take our Courses</option>
+                    <option value="2">To Read our Blog Posts</option>
+                    <option value="3">Others</option>
+                </select>
+            </label>
+            <p>What type of account do you have?</p>
+            <label for="personal-account">
+                <input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account
+            </label>
+            <label for="business-account">
+                <input id="business-account" type="radio" name="account-type" class="inline" /> Business Account
+            </label>
+            <p>What are you interested in?</p>
+            <label for="front-end-projects" name="front-end-projects">
+                <input type="checkbox" value="front-end-projects" class="inline" /> Front-end Projects
+            </label>
+            <label for="back-end-projects" name="back-end-projects">
+                <input type="checkbox" value="back-end-projects" class="inline" /> Back-end Projects
+            </label>
+            <label for="data-visualization" name="data-visualization">
+                <input type="checkbox" value="data-visualization" class="inline" /> Data Visualization
+            </label>
+            <label for="open-source-community" name="open-source-community">
+                <input type="checkbox" value="open-source-community" class="inline" /> Open Source Community
+            </label>
+            <label for="videos" name="videos">
+                <input type="checkbox" value="videos" class="inline" /> Videos
+            </label>
+            <label for="challenges" name="challenges">
+                <input type="checkbox" value="challenges" class="inline" /> Challenges
+            </label>
+            <label for="suggestion">
+                What would you like to suggest? <textarea id="suggestion" name="suggestion" rows="5" cols="40" placeholder="I would like to suggest that..."></textarea>
+            </label>
+            <input type="submit" id="submit" />
+        </form>
+    </body>
+</html>
